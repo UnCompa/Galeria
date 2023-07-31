@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Roboto+Mono&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+:root {
+    --negro: #131313;
+    --blanco: #ddd;
+    --primario: #00337C;
+    --secundario: #1C82AD;
+    --terceario: #03C988;
+}
+body {
+    background-color: var(--negro);
+    user-select:var(--blanco)
+}
+.home {
+    height: 60vh;
+    overflow: hidden;
+    perspective: 2px;
+}
+.home div {
+    color: var(--blanco);
+}
+.home h1 {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateY(40%);
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    z-index: 5;
+}
+.home video {
+    filter: blur(2px) opacity(.5) saturate(2);
+    z-index: -1;
+}
+.content__container {
+    background: #131313;
+    background-size: cover;
+    z-index: 10;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    align-items: center;
+    justify-items: center;
+}
+.card {
+    height: 350px;
+    width: 300px;
+    margin: 2em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease;
+}
+.card:hover {
+    border: 2px double var(--blanco);
+    box-shadow: 0 0 20px 10px #353535;
+}
+/*Cards*/
+.card__img-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+}
+.card__img-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/4056462/pexels-photo-4056462.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: center;
+    background-size: cover;
+}
+.card__img-3 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/326012/pexels-photo-326012.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+}
+.card__img-4 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/10884423/pexels-photo-10884423.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: left;
+    background-size: cover;
+}
+.card__img-5 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/17339853/pexels-photo-17339853/free-photo-of-pajaro-rojo-ramas-fondo-de-pantalla.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+}
+.card__img-6 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+}
+/*Card style*/
+.card_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -30px 80px -2px black;
+}
+.card_content p {
+    color: var(--blanco);
+    font-size: 1.3rem;
+    padding: .3rem;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif
+}
+.card_content .boton__modal {
+    border: 1px solid var(--blanco);
+    padding: .3em .8em;
+    margin: .3em;
+    background-color: var(--primario);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all .3s ease;
+    font-family: 'Raleway', sans-serif
+}
+.card-1,.card-4,.card-1 .boton__modal, .card-4 .boton__modal {
+    background-color: var(--primario);
+}
+.card-2,.card-5,.card-2 .boton__modal, .card-5 .boton__modal {
+    background-color: var(--secundario);
+}
+.card-3,.card-6,.card-3 .boton__modal, .card-6 .boton__modal {
+    background-color: var(--terceario);
+}
+.card-1 .boton__modal:hover,
+.card-4 .boton__modal:hover {
+    background-color: var(--blanco);
+    color: var(--primario);
+}
+.card-2 .boton__modal:hover,
+.card-5 .boton__modal:hover {
+    background-color: var(--blanco);
+    color: var(--secundario);
+}
+.card-3 .boton__modal:hover,
+.card-6 .boton__modal:hover {
+    background-color: var(--blanco);
+    color: var(--terceario);
+}
+/*Footer*/
+.info {
+    height: 100%;
+    background-color: var(--negro);
+    border-top: 2px solid var(--blanco);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+.U__icon {
+    background-color: var(--secundario);
+    height: 30px;
+    width: 30px;
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h3 {
+    color: var(--blanco);
+    font-size: 1.1rem;
+    padding-left: .5rem;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.icons button {
+    background: none;
+    border: none;
+    width: 150px;
+    color: var(--blanco);
+    padding: .5rem;
+    font-size: 1rem;
+    margin: .2rem;
+    /*XD*/
+    box-shadow: inset 0 0 0 0 var(--secundario);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s
+}
+.icons i {
+    padding: .2rem;
+    color: var(--secundario);
+}
+.icons button:hover,
+.icons button:active {
+    box-shadow: inset 0px -50px 0 0px var(--primario);
+}
+@media (max-width:768px) {
+    .info {
+        background-color: var(--negro);
+        border-top: 2px solid var(--blanco);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 50%;
+        margin: 1em;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,376 @@
+:root {
+    --negro-2: #ececec;
+    --blanco-2: #be5757;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+    --negro-2: #ececec;
+    --blanco-2: #232323;
+    }
+  }
+/*Modal 1*/
+.container__modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+#btn-modal {
+    display: none;
+}
+.container__modal-1 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: #2229;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+#btn-modal:checked ~ .container__modal-1 {
+    display: flex;
+}
+.content__modal {
+    width: 90%;
+    height: 95%;
+    padding: 10px;
+    background: linear-gradient(135deg,#000a 20%,var(--primario));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content__modal h2 {
+    color: var(--blanco);
+    margin: .5em 0em;
+    font-family: 'Poppins', sans-serif;
+}
+.content__modal p {
+    color: var(--negro-2);
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.content__modal .btn__cerrar-1 {
+    width: 100%;
+    margin: .3em 0em;
+    display: flex;
+    justify-content: center;
+}
+.container__modal .btn__cerrar-1 label {
+    background-color: var(--primario-2);
+    border: 2px solid var(--negro-2);
+    color: var(--negro-2);
+    padding: .5em .8em;
+    transition: all .2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.container__modal .btn__cerrar-1 label:hover {
+    background-color: var(--negro-2);
+    color: var(--blanco-2);
+}
+.cerrar__modal-1 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; right: 0;
+    z-index: -1;
+}
+/*Modal 2*/
+#btn_modal2 {
+    display: none;
+}
+.container__modal-2 {
+    display: none;
+}
+#btn_modal2:checked ~ .container__modal-2 {
+    display: flex;
+}
+.modal2 {
+    width: 90%;
+    height: 95%;
+    padding: 10px;
+    background: linear-gradient(135deg,#000a 20%,var(--secundario));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal2 h2 {
+    color: var(--blanco);
+    margin: .5em 0em;
+    font-family: 'Poppins', sans-serif;
+}
+.modal2 p {
+    color: var(--negro-2);
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.modal2 .btn__cerrar-2 {
+    width: 100%;
+    margin: .3em 0em;
+    display: flex;
+    justify-content: center;
+}
+.modal2 .btn__cerrar-2 label {
+    background-color: var(--primario-2);
+    border: 2px solid var(--negro-2);
+    color: var(--negro-2);
+    padding: .5em .8em;
+    transition: all .2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.container__modal .btn__cerrar-2 label:hover {
+    background-color: var(--negro-2);
+    color: var(--blanco-2);
+}
+.cerrar__modal-2 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; right: 0;
+    z-index: -1;
+}
+@media screen and (max-width: 800) {
+    .content__modal {
+        width: 80%;
+    }
+}
+/*Modal 3*/
+#btn_modal3 {
+    display: none;
+}
+.container__modal-3 {
+    display: none;
+}
+#btn_modal3:checked ~ .container__modal-3 {
+    display: flex;
+}
+.modal3 {
+    width: 90%;
+    height: 95%;
+    padding: 10px;
+    background: linear-gradient(135deg,#000a 20%,var(--terceario));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal3 h2 {
+    color: var(--blanco);
+    margin: .5em 0em;
+    font-family: 'Poppins', sans-serif;
+}
+.modal3 p {
+    color: var(--negro-2);
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.modal3 .btn__cerrar-3 {
+    width: 100%;
+    margin: .3em 0em;
+    display: flex;
+    justify-content: center;
+}
+.modal3 .btn__cerrar-3 label {
+    background-color: var(--primario-2);
+    border: 2px solid var(--negro-2);
+    color: var(--negro-2);
+    padding: .5em .8em;
+    transition: all .2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.container__modal-3 .btn__cerrar-3 label:hover {
+    background-color: var(--negro-2);
+    color: var(--blanco-2);
+}
+.cerrar__modal-3 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; right: 0;
+    z-index: -1;
+}
+/*Modal 4*/
+#btn_modal4 {
+    display: none;
+}
+.container__modal-4 {
+    display: none;
+}
+#btn_modal4:checked ~ .container__modal-4 {
+    display: flex;
+}
+.modal4 {
+    width: 90%;
+    height: 95%;
+    padding: 10px;
+    background: linear-gradient(135deg,#000a 20%,var(--primario));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal4 h2 {
+    color: var(--blanco);
+    margin: .5em 0em;
+    font-family: 'Poppins', sans-serif;
+}
+.modal4 p {
+    color: var(--negro-2);
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.modal4 .btn__cerrar-4 {
+    width: 100%;
+    margin: .3em 0em;
+    display: flex;
+    justify-content: center;
+}
+.modal4 .btn__cerrar-4 label {
+    background-color: var(--primario-2);
+    border: 2px solid var(--negro-2);
+    color: var(--negro-2);
+    padding: .5em .8em;
+    transition: all .2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.container__modal-4 .btn__cerrar-4 label:hover {
+    background-color: var(--negro-2);
+    color: var(--blanco-2);
+}
+.cerrar__modal-4 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; right: 0;
+    z-index: -1;
+}
+/*Modal 5*/
+#btn_modal5 {
+    display: none;
+}
+.container__modal-5 {
+    display: none;
+}
+#btn_modal5:checked ~ .container__modal-5 {
+    display: flex;
+}
+.modal5 {
+    width: 90%;
+    height: 95%;
+    padding: 10px;
+    background: linear-gradient(135deg,#000a 20%,var(--secundario));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal5 h2 {
+    color: var(--blanco);
+    margin: .5em 0em;
+    font-family: 'Poppins', sans-serif;
+}
+.modal5 p {
+    color: var(--negro-2);
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.modal5 .btn__cerrar-5 {
+    width: 100%;
+    margin: .3em 0em;
+    display: flex;
+    justify-content: center;
+}
+.modal5 .btn__cerrar-5 label {
+    background-color: var(--primario-2);
+    border: 2px solid var(--negro-2);
+    color: var(--negro-2);
+    padding: .5em .8em;
+    transition: all .2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.container__modal-5 .btn__cerrar-5 label:hover {
+    background-color: var(--negro-2);
+    color: var(--blanco-2);
+}
+.cerrar__modal-5 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; right: 0;
+    z-index: -1;
+}
+/*Modal 6*/
+#btn_modal6 {
+    display: none;
+}
+.container__modal-6 {
+    display: none;
+}
+#btn_modal6:checked ~ .container__modal-6 {
+    display: flex;
+}
+.modal6 {
+    width: 90%;
+    height: 95%;
+    padding: 10px;
+    background: linear-gradient(135deg,#000a 20%,var(--terceario));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal6 h2 {
+    color: var(--blanco);
+    margin: .5em 0em;
+    font-family: 'Poppins', sans-serif;
+}
+.modal6 p {
+    color: var(--negro-2);
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.modal6 .btn__cerrar-6 {
+    width: 100%;
+    margin: .3em 0em;
+    display: flex;
+    justify-content: center;
+}
+.modal6 .btn__cerrar-6 label {
+    background-color: var(--primario-2);
+    border: 2px solid var(--negro-2);
+    color: var(--negro-2);
+    padding: .5em .8em;
+    transition: all .2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.container__modal-6 .btn__cerrar-6 label:hover {
+    background-color: var(--negro-2);
+    color: var(--blanco-2);
+}
+.cerrar__modal-6 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; right: 0;
+    z-index: -1;
+}
